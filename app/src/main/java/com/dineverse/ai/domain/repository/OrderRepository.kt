@@ -1,1 +1,4 @@
-package com.dineverse.ai.domain.repository\n\ninterface OrderRepository {\n}
+package com.dineverse.ai.domain.repository
+
+interface OrderRepository {
+}

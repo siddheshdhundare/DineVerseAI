@@ -1,1 +1,3 @@
-package com.dineverse.ai.data.model\n\ndata class Order(val id: String = "")
+package com.dineverse.ai.data.model
+
+data class Order(val id: String = "")

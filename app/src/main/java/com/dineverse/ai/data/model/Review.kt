@@ -1,1 +1,3 @@
-package com.dineverse.ai.data.model\n\ndata class Review(val id: String = "")
+package com.dineverse.ai.data.model
+
+data class Review(val id: String = "")

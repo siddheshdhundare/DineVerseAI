@@ -1,1 +1,4 @@
-package com.dineverse.ai.domain.repository\n\ninterface RewardRepository {\n}
+package com.dineverse.ai.domain.repository
+
+interface RewardRepository {
+}

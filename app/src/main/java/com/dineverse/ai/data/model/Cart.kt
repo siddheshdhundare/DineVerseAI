@@ -1,1 +1,3 @@
-package com.dineverse.ai.data.model\n\ndata class Cart(val id: String = "")
+package com.dineverse.ai.data.model
+
+data class Cart(val id: String = "")

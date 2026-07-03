@@ -1,1 +1,3 @@
-package com.dineverse.ai.data.model\n\ndata class Reward(val id: String = "")
+package com.dineverse.ai.data.model
+
+data class Reward(val id: String = "")

@@ -1,1 +1,4 @@
-package com.dineverse.ai.domain.repository\n\ninterface ProfileRepository {\n}
+package com.dineverse.ai.domain.repository
+
+interface ProfileRepository {
+}
