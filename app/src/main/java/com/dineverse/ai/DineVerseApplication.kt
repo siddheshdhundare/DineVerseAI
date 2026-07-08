@@ -1,6 +1,7 @@
 package com.dineverse.ai
 
 import android.app.Application
+import com.dineverse.ai.BuildConfig
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 

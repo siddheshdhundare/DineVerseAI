@@ -1,6 +1,6 @@
 package com.dineverse.ai.data.remote
 
-import com.dineverse.ai.core.constants.Constants
+import com.dineverse.ai.BuildConfig
 import io.github.jan.supabase.SupabaseClient
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.auth.Auth
@@ -11,15 +11,22 @@ import timber.log.Timber
 
 object SupabaseClientProvider {
     fun createClient(): SupabaseClient {
-        Timber.d("Initializing Supabase")
-        return createSupabaseClient(
-            supabaseUrl = Constants.SUPABASE_URL,
-            supabaseKey = Constants.SUPABASE_ANON_KEY
-        ) {
-            install(Auth)
-            install(Postgrest)
-            install(Storage)
-            install(Realtime)
+        return try {
+            Timber.d("Initializing Supabase with URL: ${BuildConfig.SUPABASE_URL}")
+            val client = createSupabaseClient(
+                supabaseUrl = BuildConfig.SUPABASE_URL,
+                supabaseKey = BuildConfig.SUPABASE_ANON_KEY
+            ) {
+                install(Auth)
+                install(Postgrest)
+                install(Storage)
+                install(Realtime)
+            }
+            Timber.d("Supabase initialized successfully")
+            client
+        } catch (e: Exception) {
+            Timber.e(e, "Supabase initialization failed")
+            throw e
         }
     }
 }

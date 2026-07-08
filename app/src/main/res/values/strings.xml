@@ -1,3 +1,76 @@
 <resources>
     <string name="app_name">DineVerse AI</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+
+    <!-- Signup -->
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="accept_terms">I accept the Terms and Conditions</string>
+
+    <!-- Forgot Password -->
+    <string name="reset_password">Reset Password</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="forgot_password_desc">Enter your email address and we will send you a link to reset your password.</string>
+
+    <!-- Verification -->
+    <string name="verify_email">Verify Email</string>
+    <string name="verification_desc">We have sent a verification email to %1$s. Please check your inbox and click the verification link.</string>
+    <string name="i_have_verified">I have verified</string>
+    <string name="resend_email">Resend verification email</string>
+    <string name="resend_cooldown">Resend in %1$d seconds</string>
+
+    <!-- Home -->
+    <string name="search_hint">Search restaurants…</string>
+    <string name="error_generic">Something went wrong</string>
+    <string name="retry">Retry</string>
+    <string name="no_restaurants_found">No restaurants found</string>
+    <string name="hello_foodie">Hello, Foodie!</string>
+    <string name="what_to_eat">What would you like to eat today?</string>
+    <string name="cat_all">All</string>
+    <string name="cat_pizza">Pizza</string>
+    <string name="cat_burgers">Burgers</string>
+    <string name="cat_sushi">Sushi</string>
+    <string name="cat_desserts">Desserts</string>
+    <string name="cat_drinks">Drinks</string>
+    <string name="popular_restaurants">Popular Restaurants</string>
+
+    <!-- Restaurant Details -->
+    <string name="search_menu">Search in menu…</string>
+    <string name="price_format">$%1$.2f</string>
+
+    <!-- Cart -->
+    <string name="my_cart">My Cart</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="total">Total</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="delete">Delete</string>
+
+    <!-- Favorites -->
+    <string name="favorites">Favorites</string>
+    <string name="no_favorites">No favorites yet</string>
+
+    <!-- Order Summary -->
+    <string name="order_summary">Order Summary</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="upi">UPI</string>
+    <string name="card">Credit/Debit Card</string>
+    <string name="order_details">Order Details</string>
+    <string name="taxes_charges">Taxes &amp; Charges</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="place_order">Place Order</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="added_to_cart">Added to cart</string>
 </resources>

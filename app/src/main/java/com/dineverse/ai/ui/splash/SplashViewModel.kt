@@ -2,7 +2,7 @@ package com.dineverse.ai.ui.splash
 
 import androidx.lifecycle.viewModelScope
 import com.dineverse.ai.core.base.BaseViewModel
-import com.dineverse.ai.core.datastore.SessionManager
+import com.dineverse.ai.domain.repository.AuthRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SplashViewModel @Inject constructor(
-    private val sessionManager: SessionManager
+    private val authRepository: AuthRepository
 ) : BaseViewModel() {
 
     private val _state = MutableStateFlow<SplashState>(SplashState.Idle)
@@ -26,8 +26,8 @@ class SplashViewModel @Inject constructor(
     private fun checkSession() {
         viewModelScope.launch {
             Timber.d("Checking session state")
-            delay(2000) // 2 seconds delay as requested
-            if (sessionManager.isLoggedIn()) {
+            delay(2000) // 2 seconds delay for branding
+            if (authRepository.isLoggedIn()) {
                 Timber.d("User is logged in")
                 _state.value = SplashState.Authenticated
             } else {
